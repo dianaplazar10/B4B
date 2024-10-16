@@ -5,6 +5,7 @@ require 'vendor/autoload.php';
 use Parse\ParseException;
 use Parse\ParseObject;
 use Parse\ParseClient;
+use Parse\ParseQuery;
 
 // Initializes with the <APPLICATION_ID>, <REST_KEY>, and <MASTER_KEY>
 ParseClient::initialize( "8IbiEQbsKQEFjPdeRdf5HpMubXBYURgBs3czh3Bj", "YY8gGmxEmN2WjFif6c02iP5tEIT1tZi56g0GwG1E", "9t0hCq0ZFv2RxdCXGevyek6We95BaW67FJrXMfkV" );
