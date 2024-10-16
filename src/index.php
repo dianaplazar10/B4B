@@ -9,6 +9,7 @@ use Parse\ParseClient;
 // Initializes with the <APPLICATION_ID>, <REST_KEY>, and <MASTER_KEY>
 ParseClient::initialize( "8IbiEQbsKQEFjPdeRdf5HpMubXBYURgBs3czh3Bj", "YY8gGmxEmN2WjFif6c02iP5tEIT1tZi56g0GwG1E", "9t0hCq0ZFv2RxdCXGevyek6We95BaW67FJrXMfkV" );
 ParseClient::setServerURL('https://parseapi.back4app.com', '/');
+
 // Create an object  - Start
 
 $myCustomObject = new ParseObject("Orders"); // Table name : Orders
@@ -26,5 +27,22 @@ try {
   echo 'Failed to create new object, with error message: ' . $ex->getMessage();
 }
 // Create an object  - End
+
+// Read an object  - Start
+$query = new ParseQuery("Orders");
+try {
+  $myCustomObject = $query->get("ZdoR4XqxDu");
+  // The object was retrieved successfully.
+
+  // To get attributes, you can use the "get" method, providing the attribute name:
+  $myCustomKey1Value = $myCustomObject->get("name");
+  echo "<br><br>The name is : ".$myCustomKey1Value;
+} catch (ParseException $ex) {
+  // The object was not retrieved successfully.
+  // error is a ParseException with an error code and message.
+}
+// Read an object  - End
+
+
 
  ?>
