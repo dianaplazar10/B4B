@@ -2,9 +2,8 @@
 
 require 'vendor/autoload.php';
 // Initializes with the <APPLICATION_ID>, <REST_KEY>, and <MASTER_KEY>
-ParseClient::initialize( "RZ5AaWwIGOrtOHBitpTVf2Ynv4gMvGFg5gCkDMky", "wanGfBbnYdL8RXByZKTOfZ4eHQaZssg50oxinXDF", "kixOBHxnqjq7sVInsfLAPoN3L5Oc8hN7bmLraBiD" );
+ParseClient::initialize( "8IbiEQbsKQEFjPdeRdf5HpMubXBYURgBs3czh3Bj", "YY8gGmxEmN2WjFif6c02iP5tEIT1tZi56g0GwG1E", "9t0hCq0ZFv2RxdCXGevyek6We95BaW67FJrXMfkV" );
 ParseClient::setServerURL('https://parseapi.back4app.com', '/');
-
 // Create an object  - Start
 use Parse\ParseException;
 use Parse\ParseObject;
